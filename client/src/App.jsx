@@ -18,9 +18,9 @@ function App() {
       setReport(null);
 
       const response = await axios.post(
-        "http://localhost:5000/api/audit",
-        { url }
-      );
+      "https://seoaudit-72et.onrender.com/api/audit",
+      { url }
+    );
 
       setReport(response.data);
     } catch (error) {
