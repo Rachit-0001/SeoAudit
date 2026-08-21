@@ -211,14 +211,14 @@ function App() {
             {/* PDF */}
             <div className="pdf-section">
               <button
-                className="pdf-button"
+               className="pdf-button"
                 onClick={() =>
                   window.open(
-                    `http://localhost:5000/api/audit/${report._id}/pdf`,
+                    `${import.meta.env.VITE_API_URL}/api/audit/${report._id}/pdf`,
                     "_blank"
                   )
                 }
-              >
+                              >
                 Download PDF Report
               </button>
             </div>
